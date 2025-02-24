@@ -1,0 +1,117 @@
+.nav-bar a{
+    text-decoration: none;
+    color: inherit;
+}
+.main-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 8px;
+    z-index: 90;
+}
+.main-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.nav-link{
+    font-family: Roboto;
+    color: var(--text-theme-color);
+    font-size: clamp(1.2rem,5vw,1.3rem);
+    transition: all 0.15s;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link:hover{
+    color: #00e5ff;
+    transform: scale(0.98);
+    background-color: #34495e;
+}
+.nav-link:active{
+    color: #04b0d2;
+    transform: scale(0.96);
+}
+.nav-menu-btn{
+    display: none;
+    color: #059fb0;
+    font-size: clamp(2.5rem,9vw,3rem);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s;
+}
+.nav-menu-btn:hover{
+    cursor: pointer;
+    color: #1a99a7;
+    transform: scale(0.98);
+}
+.nav-menu-btn:active{
+    color: #31aebb;
+    transform: scale(0.96);
+}
+.side-bar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 250px;
+    background-color: black;
+    z-index: 100;
+    display: none;
+}
+.side-bar ul{
+    width: 100%; /* Ensure the list takes full width */
+    padding: 80px 0; /* Adjust padding */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* Ensure alignment */
+}
+.nav-cancel-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: clamp(3rem,9vw,3.6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    transition: all 0.15s;
+}
+.nav-cancel-btn:hover{
+    cursor: pointer;
+    transform: scale(0.98);
+    color: rgb(198, 18, 18);
+}
+.nav-cancel-btn:active{
+    transform: scale(0.95);
+    color: rgb(172, 25, 25);
+}
+.side-bar .nav-link {
+    width: 100%; /* Make each nav-link take full width */
+    text-align: center; /* Center text inside */
+    white-space: nowrap; /* Prevent text from breaking into multiple lines */
+    display: block; /* Ensure block-level behavior */
+    padding: 15px 0; /* Increase padding for better spacing */
+}
+@media(max-width:800px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .nav-menu-btn{
+        display: flex;
+    }
+}
