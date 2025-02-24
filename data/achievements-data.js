@@ -65,6 +65,11 @@ export const achievementsData = [
         description: 'Beat recruiter at russian roullete',
     },
     {
+        title: 'Nice Car',
+        imgSrc: 'images/achievements-img/nice-car.png',
+        description: 'Talk with Frontman in the car',
+    },
+    {
         title: 'Back To The Game',
         imgSrc: 'images/achievements-img/back-to-the-game.png',
         description: 'Go back to squid games',
