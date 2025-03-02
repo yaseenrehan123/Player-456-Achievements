@@ -27,12 +27,12 @@ export const achievementsData = [
     {
         title: 'Lights Out',
         imgSrc: 'images/achievements-img/lights-out.png',
-        description: 'Survive Dalgona with an Umberalla',
+        description: 'Survive Night',
     },
     {
         title: 'Pull Pull!',
         imgSrc: 'images/achievements-img/pull-pull.png',
-        description: 'Survive Dalgona with an Umberalla',
+        description: 'Survive Tug of War',
     },
     {
         title: 'Gganbu!',
